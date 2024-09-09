@@ -1,0 +1,18 @@
+<div *ngIf="data=='solved'">
+    <h2 mat-dialog-title>Puzzle Solved!</h2>
+    <mat-dialog-actions>
+        <button [ngClass]="'continue'" (click)="continue()">Continue</button>
+    </mat-dialog-actions>
+</div>
+
+<div [ngClass]="'out'" *ngIf="data=='out'">
+    <h2 [ngClass]="'outTitle'">Out of Lives!</h2>
+    <div [ngClass]="'outHeart'">
+        <img [ngClass]="'outHeartImage'" src="../../assets/fullHeart.png">
+        <div [ngClass]="'outHeartText'">+1</div>
+    </div>
+    <mat-dialog-actions>
+        <button [ngClass]="'addLife'" (click)="addLife()">Get Another Life</button>
+        <a [ngClass]="'restart'" (click)="restart()">Restart</a>
+    </mat-dialog-actions>
+</div>

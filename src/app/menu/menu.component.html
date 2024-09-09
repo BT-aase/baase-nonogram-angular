@@ -1,0 +1,6 @@
+<div [ngClass]="'appMenu'">
+  <div [ngClass]="'menuTitle'">Select A Puzzle:</div>
+  <a *ngFor="let puzzle of puzzles" [ngClass]="puzzle.difficulty" routerLink="/puzzle/{{puzzle.id}}">
+    {{puzzle.id}}
+  </a>
+</div>

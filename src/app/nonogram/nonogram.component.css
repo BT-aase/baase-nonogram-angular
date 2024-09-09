@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400;700');
+
+
+div {
+    display: inline-block;
+}
+
+.actionSwitch {
+    margin-left: 40%
+}
+
+.cross {
+    width: 55px;
+    font-size: 40px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.toggle {
+    transform: scale(1.6);
+    padding-bottom: 25px;
+}
+
+::ng-deep .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: blue;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: skyblue; 
+}
+
+.fill {
+    height: 35px;
+    width: 35px;
+    background-color: #000;
+    margin-left: 25px;
+    margin-bottom: -4px;
+}

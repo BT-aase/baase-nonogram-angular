@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.back {
+    padding-top: 5px;
+    font-size: 40px;
+    color: #00003f;
+}
+
+.heartDisplay{
+    margin-left: 175px;
+    width: 165px;
+}

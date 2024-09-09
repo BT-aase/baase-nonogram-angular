@@ -1,0 +1,21 @@
+<div>
+<app-header [heartCount] = 'heartCount' [solved] = 'solved' (onBack) = 'exitAction($event)'></app-header>
+<app-gamegrid [action] = 'action' 
+              [heartCount] = 'heartCount'
+              [id] = 'id'
+              [size] = 'size'
+              [rowNums] = 'rowNums'
+              [colNums] = 'colNums'
+              [currentGame] = 'currentGame'
+              [solution] = 'solution'
+              [filledBoxes] = 'filledBoxes'
+              [solved] = 'solved'
+              (onLifeLost)='lifeLost($event)'
+              (onSolve)='onSolved($event)'></app-gamegrid>           
+<div [ngClass]="'actionSwitch'" *ngIf="!solved">
+    <div [ngClass]="'cross'">X</div>
+    <mat-slide-toggle [ngClass]="'toggle'" [(ngModel)]="checked"
+    (change)="changed()"></mat-slide-toggle>
+    <div [ngClass]="'fill'"></div>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<table *ngIf="!solved; else image">
+    <td [ngClass]="'topCorner'"></td>
+    <th *ngFor = "let col of colNums; let i=index" [ngClass]="colSolved(i)">{{col}}</th>
+    <tr *ngFor = "let row of rows; let j=index">
+      <th [ngClass]="rowSolved(j)">{{rowNums[j]}}</th>
+      <td *ngFor = "let column of columns; let k=index" id='{{j}}-{{k}}' 
+      [ngStyle]="{'background-color': filledOrIncorrectCheck(j.toString() + '-' + k.toString())}" 
+      (click)="onClick($event)">
+        <div id='content-{{j}}-{{k}}' [ngClass]="crossedStyle(size)"
+        [innerHTML]="crossedCheck(j.toString() + '-' + k.toString())">
+        </div>
+      </td>
+    </tr>
+</table>
+
+<ng-template #image>
+  <img [src]="imageURL">
+</ng-template>

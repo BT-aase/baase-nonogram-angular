@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:700');
+
+table {
+  width: 500px;
+  height: 500px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  border: 1px solid #00003f;
+}
+
+div {
+  font-weight: 700;
+  font-family: 'Nunito';
+  overflow: hidden;
+}
+
+.topCorner {
+  border: 0;
+}
+
+.colNums{
+  text-align: center;
+  vertical-align: middle;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  background-color: #d8e5f2;
+  color: #000067;
+  border-right: 1px solid #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+.colNumsSolved{
+  text-align: center;
+  vertical-align: middle;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  background-color: #dddddd;
+  color: #fff;
+  border-right: 1px solid #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+.rowNums{
+  text-align: center;
+  background-color: #d8e5f2;
+  color: #000067;
+  margin-right: 15px;
+  border-bottom: 1px solid #fff;
+  border-radius: 15px 0 0 15px;
+}
+
+.rowNumsSolved{
+  text-align: center;
+  background-color: #dddddd;
+  color: #fff;
+  margin-right: 15px;
+  border-bottom: 1px solid #fff;
+  border-radius: 15px 0 0 15px;
+}
+
+.contentFive {
+  width: 50px;
+  height: 80px;
+  padding-left: 15px;
+  margin-top: -20px;
+  font-size: 75px;
+  color: #00003f;
+}
+
+.contentTen {
+  width: 35px;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: -5px;
+  font-size: 35px;
+  color: #00003f;
+}
+
+.contentFifteen {
+  width: 20px;
+  height: 30px;
+  padding-left: 7px;
+  font-size: 24px;
+  color: #00003f;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #00003f;
+  border-radius: 4px;
+}
