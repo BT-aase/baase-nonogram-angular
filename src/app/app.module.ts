@@ -14,24 +14,23 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    GamegridComponent,
-    NonogramComponent,
-    HeaderComponent,
-    DialogBodyComponent,
-    MenuComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatDialogModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [DialogBodyComponent]
+    declarations: [
+        AppComponent,
+        GamegridComponent,
+        NonogramComponent,
+        HeaderComponent,
+        DialogBodyComponent,
+        MenuComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatSlideToggleModule,
+        MatDialogModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
